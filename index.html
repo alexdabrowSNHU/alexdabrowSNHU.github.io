@@ -2,166 +2,190 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexander Dabrow Capstone</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Dabrow Capstone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Roboto', 'sans-serif'],
-          },
-          backgroundImage: {
-            'gradient-animated': 'linear-gradient(90deg, #f9b8b8, #1fddff, #efa2ff, #ff9966)',
-          },
-          animation: {
-            'bg-pan': 'bgPan 50s ease infinite',
-          },
-          keyframes: {
-            bgPan: {
-              '0%': { backgroundPosition: '0% 50%' },
-              '50%': { backgroundPosition: '100% 50%' },
-              '100%': { backgroundPosition: '0% 50%' },
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-animated': 'linear-gradient(90deg, #f9b8b8, #1fddff, #efa2ff, #ff9966)',
+                    },
+                    animation: {
+                        'bg-pan': 'bgPan 50s ease infinite',
+                    },
+                    keyframes: {
+                        bgPan: {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' },
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    }
-  </script>
+    </script>
 
 
 </head>
 
 <body class="min-h-screen flex flex-col bg-gradient-animated bg-[length:400%_400%] animate-bg-pan text-black font-sans">
-  <div class="absolute top-0 right-0 bg-white border-b-4 border-l-4 border-black  font-bold px-10 py-1 text-2xl">
-    Alexander Dabrow
-  </div>
-  <main class="w-full">
-    <h1 class="text-4xl font-bold bg-white text-center w-3/5 border-r-4 border-b-4 border-black">CS-499 Capstone Project
-    </h1>
-    <div class="w-3/5 mx-auto bg-white p-4 rounded-lg shadow-md mt-6 space-y-2 text-center">
-      <h2 class="text-2xl font-semibold">Project Links</h2>
-      <ul class="space-y-2 mt-2">
-        <li>
-          <a href="https://wonderful-sky-03a377e10.6.azurestaticapps.net/" target="_blank"
-            class="text-blue-700 hover:text-blue-900">
-            Live Project
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/alexdabrowSNHU/cs-499-frontend" target="_blank"
-            class="text-blue-700 hover:text-blue-900">
-            Frontend (GitHub)
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/alexdabrowSNHU/cs-499-api" target="_blank"
-            class="text-blue-700 hover:text-blue-900">
-            Backend API (GitHub)
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/alexdabrowSNHU/CS-499-Original-Files" target="_blank"
-            class="text-blue-700 hover:text-blue-900">
-            Original Files (GitHub)
-          </a>
-        </li>
-      </ul>
+    <div class="absolute top-0 right-0 bg-white border-b-4 border-l-4 border-black  font-bold px-10 py-1 text-2xl">
+        Alexander Dabrow
     </div>
-    <div class="w-3/5 mx-auto bg-white p-4 rounded-lg shadow-md mt-10 space-y-4 text-black">
-      <h2 class="text-2xl font-semibold text-center">Capstone Enhancements</h2>
-
-      <div>
-        <h3 class="text-lg font-bold">Enhancement 1 – Software Engineering and Design</h3>
-        <p class="text-sm">Developed a full-stack web application using Azure Static Web Apps and Azure App Service with
-          Spring Boot.</p>
-        <a href="Module%203%20Narrative.docx" download class="text-blue-700 underline hover:text-blue-900">Download
-          Enhancement 1 Narrative</a>
-      </div>
-
-      <div>
-        <h3 class="text-lg font-bold">Enhancement 2 – Data Structures and Algorithms</h3>
-        <p class="text-sm">Implemented parsing for CSV uploads, as well as utilizing two different sort methods to
-          compare performance.</p>
-        <a href="Module%204%20Narrative.docx" download class="text-blue-700 underline hover:text-blue-900">Download
-          Enhancement 2 Narrative</a>
-      </div>
-      <div>
-        <h3 class="text-lg font-bold">Enhancement 3 – Database</h3>
-        <p class="text-sm">Implemented a database with an Azure for MySQL Database instance, utilizing Azure Key Vault
-          for secure credential managment.</p>
-        <a href="Module%205%20Narrative.docx" download class="text-blue-700 underline hover:text-blue-900">Download
-          Enhancement 3 Narrative</a>
-      </div>
-    </div>
-    <div class="w-3/5 mx-auto mt-10 bg-white p-4 rounded-lg shadow-md text-black">
-      <details class="group">
-        <summary class="text-xl font-semibold cursor-pointer hover:text-blue-700">
-          Personal Reflection and Assessment
-        </summary>
-        <div class="mt-4 text-sm leading-relaxed">
-          <p>When I came into the Computer Science program at SNHU, the only real skill or knowledge I had regarding the
-            world of software development was printing “Hello, World!” in Python.</p>
-          <br />
-          <p><strong>IT-140</strong> (Intro to Scripting) was the first class where instead of just printing a statement
-            in Python, it was
-            about defining and using functions, learning about return values, using variables and dictionaries to create
-            a console game.</p>
-          <p><strong>IT-145</strong> (Intro to App Development) was my first introduction to Java. This is where we
-            developed a console application
-            for the animal rescue management system that this capstone is based on.</p>
-          <p><strong>CS-300</strong> (Data Structures and Algorithms) gave me one of my first introductions to writing
-            in C++ and learning how to build sort algorithms.</p>
-          <p><strong>CS-360</strong> (Mobile Architecture and Programming) was my first experience doing programming for
-            mobile in Android Studio, as well as implementing a login system.</p>
-          <p><strong>CS-405</strong> (Secure Coding) was about secure coding, learning about common vulnerabilities,
-            static testing
-            methods, and mitigation of threats with Defense in Depth.</p>
-          <p><strong>CS-465 & CS-470</strong> (Full Stack Development I & II) was about learning the MEAN stack
-            (MongoDB, Express,
-            Angular, and Node.js), as well as integrating AWS services like Lambda and API Gateway.</p>
-          <br />
-          <p>This all culminates into this final capstone. I did not want to rely on things I learned. I wanted this
-            capstone to be another experience in learning, not just exercising what I already know. That is why I chose
-            to use React for the frontend, and Spring Boot on Azure App Service on the backend. I think it is an
-            important skill to be able to quickly learn and adapt to new tools and use them proficiently, which is what
-            I believe I have done with this capstone project.</p>
+    <main class="w-full">
+        <h1 class="text-4xl font-bold bg-white text-center w-3/5 border-r-4 border-b-4 border-black">CS-499 Capstone
+            Project
+        </h1>
+        <div class="w-3/5 mx-auto bg-white p-4 rounded-lg shadow-md mt-6 space-y-2 text-center">
+            <h2 class="text-2xl font-semibold">Project Links</h2>
+            <ul class="space-y-2 mt-2">
+                <li>
+                    <a href="https://wonderful-sky-03a377e10.6.azurestaticapps.net/" target="_blank"
+                        class="text-blue-700 hover:text-blue-900">
+                        Live Project
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/alexdabrowSNHU/cs-499-frontend" target="_blank"
+                        class="text-blue-700 hover:text-blue-900">
+                        Frontend (GitHub)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/alexdabrowSNHU/cs-499-api" target="_blank"
+                        class="text-blue-700 hover:text-blue-900">
+                        Backend API (GitHub)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/alexdabrowSNHU/CS-499-Original-Files" target="_blank"
+                        class="text-blue-700 hover:text-blue-900">
+                        Original Files (GitHub)
+                    </a>
+                </li>
+            </ul>
         </div>
-      </details>
-    </div>
+        <div class="w-3/5 mx-auto bg-white p-4 rounded-lg shadow-md mt-10 space-y-4 text-black">
+            <h2 class="text-2xl font-semibold text-center">Capstone Enhancements</h2>
 
-    <div class="w-3/5 mx-auto mt-10 bg-white p-4 mb-10 rounded-lg shadow-md text-black">
-      <h2 class="text-2xl font-semibold text-center mb-4">Azure Database Comparison</h2>
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe class="w-full h-[600px] rounded-lg shadow-md" src="https://www.youtube.com/embed/TwxGhqnDk1s"
-          title="Capstone Presentation" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
+            <div>
+                <h3 class="text-lg font-bold">Enhancement 1 – Software Engineering and Design</h3>
+                <p class="text-sm">Developed a full-stack web application using Azure Static Web Apps and Azure App
+                    Service with
+                    Spring Boot.</p>
+                <a href="Module%203%20Narrative.docx" download
+                    class="text-blue-700 underline hover:text-blue-900">Download
+                    Enhancement 1 Narrative</a>
+            </div>
 
-    <div class="w-3/5 mx-auto mt-10 bg-white p-4 mb-10 rounded-lg shadow-md text-black">
-      <h2 class="text-2xl font-semibold text-center mb-4">Code Review</h2>
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe class="w-full h-[600px] rounded-lg shadow-md" src="https://www.youtube.com/embed/3LdI48q0UHA"
-          title="Capstone Presentation" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
+            <div>
+                <h3 class="text-lg font-bold">Enhancement 2 – Data Structures and Algorithms</h3>
+                <p class="text-sm">Implemented parsing for CSV uploads, as well as utilizing two different sort methods
+                    to
+                    compare performance.</p>
+                <a href="Module%204%20Narrative.docx" download
+                    class="text-blue-700 underline hover:text-blue-900">Download
+                    Enhancement 2 Narrative</a>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold">Enhancement 3 – Database</h3>
+                <p class="text-sm">Implemented a database with an Azure for MySQL Database instance, utilizing Azure Key
+                    Vault
+                    for secure credential managment.</p>
+                <a href="Module%205%20Narrative.docx" download
+                    class="text-blue-700 underline hover:text-blue-900">Download
+                    Enhancement 3 Narrative</a>
+            </div>
+        </div>
+        <div class="w-3/5 mx-auto mt-10 bg-white p-4 rounded-lg shadow-md text-black">
+            <details class="group">
+                <summary class="text-xl font-semibold cursor-pointer hover:text-blue-700">
+                    Personal Reflection and Assessment
+                </summary>
+                <div class="mt-4 text-sm leading-relaxed">
+                    <p>When I came into the Computer Science program at SNHU, the only real skill or knowledge I had
+                        regarding the
+                        world of software development was printing “Hello, World!” in Python.</p>
+                    <br />
+                    <p><strong>IT-140</strong> (Intro to Scripting) was the first class where instead of just printing a
+                        statement
+                        in Python, it was
+                        about defining and using functions, learning about return values, using variables and
+                        dictionaries to create
+                        a console game.</p>
+                    <p><strong>IT-145</strong> (Intro to App Development) was my first introduction to Java. This is
+                        where we
+                        developed a console application
+                        for the animal rescue management system that this capstone is based on.</p>
+                    <p><strong>CS-300</strong> (Data Structures and Algorithms) gave me one of my first introductions to
+                        writing
+                        in C++ and learning how to build sort algorithms.</p>
+                    <p><strong>CS-360</strong> (Mobile Architecture and Programming) was my first experience doing
+                        programming for
+                        mobile in Android Studio, as well as implementing a login system.</p>
+                    <p><strong>CS-405</strong> (Secure Coding) was about secure coding, learning about common
+                        vulnerabilities,
+                        static testing
+                        methods, and mitigation of threats with Defense in Depth.</p>
+                    <p><strong>CS-465 & CS-470</strong> (Full Stack Development I & II) was about learning the MEAN
+                        stack
+                        (MongoDB, Express,
+                        Angular, and Node.js), as well as integrating AWS services like Lambda and API Gateway.</p>
+                    <br />
+                    <p>These classes, along with the rest of the program, have given me a solid foundation in software
+                        development. I have learned how to use Git and GitHub, how to write code in multiple languages,
+                        how to
+                        develop secure applications, and communicate ideas, concepts and strategies to technical and
+                        non-technical audiences alike.</p>
+                    <br />
+                    <p>This all culminates into this final capstone. I did not want to rely on things I learned. I
+                        wanted this capstone to be another experience in learning, not just exercising what I already
+                        know. That is
+                        why I chose to use React for the frontend, and Spring Boot on Azure App Service on the backend.
+                        I think it is an
+                        important skill to be able to quickly learn and adapt to new tools and use them proficiently,
+                        which is what
+                        I believe I have done with this capstone project.</p>
+                </div>
+            </details>
+        </div>
 
-  </main>
+        <div class="w-3/5 mx-auto mt-10 bg-white p-4 mb-10 rounded-lg shadow-md text-black">
+            <h2 class="text-2xl font-semibold text-center mb-4">Azure Database Comparison</h2>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-[600px] rounded-lg shadow-md" src="https://www.youtube.com/embed/TwxGhqnDk1s"
+                    title="Capstone Presentation" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
 
-  <footer
-    class="w-full bg-white text-black text-sm opacity-80 mt-auto flex pt-2 pb-2 justify-center items-center border-t-4 border-b-4 border-black">
-    <p>CS-499 &middot; Southern New Hampshire University &middot; Alexander Dabrow</p>
-  </footer>
+        <div class="w-3/5 mx-auto mt-10 bg-white p-4 mb-10 rounded-lg shadow-md text-black">
+            <h2 class="text-2xl font-semibold text-center mb-4">Code Review</h2>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-[600px] rounded-lg shadow-md" src="https://www.youtube.com/embed/3LdI48q0UHA"
+                    title="Capstone Presentation" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer
+        class="w-full bg-white text-black text-sm opacity-80 mt-auto flex pt-2 pb-2 justify-center items-center border-t-4 border-b-4 border-black">
+        <p>CS-499 &middot; Southern New Hampshire University &middot; Alexander Dabrow</p>
+    </footer>
 
 </body>
 
